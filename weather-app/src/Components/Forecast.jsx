@@ -25,9 +25,8 @@ export default function Forecast({ selectedCity }) {
     <div className='flex flex-row justify-center items-center w-full'>
       {weeklyWeatherData.map((forecast, index) => (
         <section key={index} className='font-Lato flex flex-col bg-slate-700 my-4 mx-4 rounded-2xl'>
-          <div className='text-white w-full text-left mb-4 mx-3'>{forecast.date}</div>
+          <div className='text-white w-full text-left mb-4 mx-3 my-2'>{forecast.date} at {forecast.dt_text}</div>
             <hr className='text-white mb-4 mx-3 text-left' />
-            <div className='text-white w-full text-left mb-4 mx-3'>{forecast.dt_text}</div>
             <div className='text-white mb-1 mx-3 text-left text-5xl'>{forecast.temp}°C</div>
           <div className='text-white mb-1 mx-3 text-left'> feels like {forecast.feels_like} °C</div>
           <div className='text-white mb-4 text-right'>
