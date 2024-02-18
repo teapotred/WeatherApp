@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { GetWeeklyWeatherData, extractWeeklyWeatherAttributes } from '../Services/weatherapi';
+import { GetWeeklyWeatherData } from '../Services/weatherapi';
 
 export default function Forecast({ selectedCity }) {
   const [weeklyWeatherData, setWeeklyWeatherData] = useState(null);

@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import SearchLocation from './Components/SearchLocation';
 import GeneralInfo from './Components/GeneralInfo';
 import Forecast from './Components/Forecast';
-import HourlyForecast from './Components/HourlyForecast';
 
 export default function App() {
   const [selectedCity, setSelectedCity] = useState(null);
@@ -21,7 +20,7 @@ export default function App() {
           
         ))}
       </section>
-      <HourlyForecast selectedCity={selectedCity}/>;
+
 
     </div>
   );
